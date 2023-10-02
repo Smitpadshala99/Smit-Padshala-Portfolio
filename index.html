@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit Padshala - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/242faf37fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <a href="index.html"><img src="./images/Smit-logo-removebg.png" alt="logo" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Engineer</p>
+            <h1>Hi, I'm <span>Smit Padshala</span><br>From India</h1>
+        </div>
+      </div>  
+    </div>
+
+<!-- ------- About-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/smit-about.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a highly motivated Computer Science Engineer passionate about utilizing my 
+                    technical skills to drive innovation and solve real-world challenges in the field.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python Developer</span><br>Machine Learning, Artificial Intelligence, Deep Learning</li>
+                            <li><span>Web Developer</span><br>Web app Development</li>
+                            <li><span>Programming Language</span><br>JAVA, Python, HTML, CSS, JavaScript</li>
+                            <li><span>Known Softwares</span><br>MATLAB, MySQL, MS Office, Canva</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>While I don't have experience in a company, I've gained valuable experience through project work.</span><br>Here are some of my key projects:</li>
+                            <li><span>Hostel Management System</span><br>I participated in a hackathon organized by VGEC. In this project, I contributed to the development of a Hostel Management System, working as part of a team to create an efficient and user-friendly system.</li>
+                            <li><span>OS Algorithm Simulator</span><br>As part of an Operating System course, I worked on developing different operating system algorithm simulations. This project helped me deepen my understanding of OS concepts and algorithms.</li>
+                            <li><span>MindSafe</span><br>I participated in Smart India hackathon. Problem statement is about children mental health Software.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Computer Science Engineering from PDPU, Gandhinagar</li>
+                            <li><span>2019-2021</span><br>HSC from Uma Vidhyalay, Ahmedabad</li>
+                            <li><span>2006-2019</span><br>Schooling from Raghuvir Vidhya Vihar, Ahmedabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------ Services ------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python project</h2>
+                    <p>From developing innovative solutions like a Children's Mental Health Software to addressing critical healthcare 
+                    challenges with Alzheimer's Disease Detection and Classification, I specialize in using Python to create impactful 
+                    projects that make a difference in people's lives.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development project</h2>
+                    <p>With a strong foundation in web development, I've successfully completed projects such as a Hostel Management System 
+                        and an Operating System Algorithm Simulation Software. These web-based solutions are designed with user-friendly 
+                        interfaces and robust functionality to meet the specific needs of clients and users.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  ------ Work ------ -->
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/hms-work-web.PNG" alt="Work1">
+                    <div class="layer">
+                        <h3>Hostel Management System</h3>
+                        <p>I participated in a hackathon organized by VGEC. In this project, I contributed to the development of a Hostel 
+                        Management System, working as part of a team to create an efficient and user-friendly system.</p>
+                        <a href="https://github.com/Smitpadshala99/Hostel-Management-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/OS-work-web.PNG" alt="Work2">
+                    <div class="layer">
+                        <h3>OS Algorithm Simulator</h3>
+                        <p>As part of an Operating System course, I worked on developing different operating system algorithm simulations. 
+                        This project helped me deepen my understanding of OS concepts and algorithms.</p>
+                        <a href="https://github.com/Smitpadshala99/OS-algorithm-simulator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/mindsafe-work-web.PNG" alt="Work3">
+                    <div class="layer">
+                        <h3>MindSafe</h3>
+                        <p>I participated in Smart India hackathon. Problem statement is about children mental health Software.</p>
+                        <a href="https://github.com/Smitpadshala99/MindSafe-Mental-Health"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/smitpadshala99" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------- Contect ------- -->
+    <div id="contect">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:smitpadshala99@gmail.com"><i class="fa-solid fa-paper-plane"></i></a> smitpadshala99@gmail.com</p>
+                    <p><a href="tel:+919586891408"><i class="fa-solid fa-square-phone"></i></a> +91 9586891408</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/smitpadshala99"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/smitpadshala99"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/smitpadshala99"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/smitpadshala_99"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./images/smit-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Smit Padshala <i class="fa-solid fa-person"></i></p>
+        </div>
+    </div>
+
+    <a href="#header" id="back-to-top-button" class="back-to-top-button">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+      
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+      
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzgsvRo1keupPydpi7Q64LMqkb-QLMImhcFYrXJF2VveIwEfp71T4UlX2IYKi6K1aJGvQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        var backButton = document.getElementById('back-to-top-button');
+      
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 300) {
+            backButton.style.display = 'block';
+          } else {
+            backButton.style.display = 'none';
+          }
+        });
+      
+        backButton.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      </script>
+      
+</body>
+</html>
