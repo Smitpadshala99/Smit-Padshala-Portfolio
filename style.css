@@ -1,3 +1,10 @@
+:root {
+    --main-color: #ff004f;
+    --sub-color: #b54769;
+    /* --main-color: #8e88a4;
+    --sub-color: #a6acd6; */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +57,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background-color: #ff004f;
+    background-color: var(--main-color);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -72,7 +79,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f ;
+    color: var(--main-color);
 }
 
 /* --------- About ----------- */
@@ -94,6 +101,10 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+.about-col-1 img:hover{
+    transform: scale(1.1);
 }
 .about-col-2{
     flex-basis: 60%;
@@ -121,7 +132,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: var(--main-color);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -138,7 +149,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b54769;
+    color: var(--sub-color);
     font-size: 14px;
 }
 
@@ -150,19 +161,19 @@ nav ul li a:hover::after{
 }
 
 
-/* ------ Services ------- */
+/* ------ projects ------- */
 
-#services{
+#projects{
     padding: 30px 0;
 }
-.services-list{
+.projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.services-list div{
+.projects-list div{
     background: #262626;
     padding: 13px;
     font-size: 300;
@@ -170,18 +181,18 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5d;
 }
 
-.services-list div i{
+.projects-list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.services-list div h2{
+.projects-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div a{
+.projects-list div a{
     text-decoration: none;
     color: #fff;
     font-size: 14px;
@@ -189,12 +200,12 @@ nav ul li a:hover::after{
     font-weight: 600;
     display: inline-block;
 }
-.services-list div a:hover{
+.projects-list div a:hover{
     font-size: 18px;
     font-weight: 900;
 }
-.services-list div:hover{
-    background: #ff004f;
+.projects-list div:hover{
+    background: var(--main-color);
     transform: translateY(-10px)
 }
 
@@ -225,7 +236,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), var(--main-color));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -248,7 +259,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: var(--main-color);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -262,7 +273,7 @@ nav ul li a:hover::after{
 
 .layer a:hover{
     color: #fff;
-    background: #ff004f;
+    background: var(--main-color);
     transform: scale(1.2);
 }
 .work:hover img{
@@ -286,7 +297,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover, .btn2:hover{
-    background: #ff004f;
+    background: var(--main-color);
 }
 
 /* ------- Contact ------- */
@@ -302,7 +313,7 @@ nav ul li a:hover::after{
     margin-top: 30px;    
 }
 .contact-left p i{
-    color: #ff004f;
+    color: var(--main-color);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -318,7 +329,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: var(--main-color);
     transform: translateY(-5px)
 }
 .btn.btn2{
@@ -371,7 +382,7 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: var(--main-color);
 }
 
 /* ------- CSS for Small Screen ------- */
@@ -384,7 +395,7 @@ nav .fa-solid{
         background-image: url(images/smit-phone-background.png);
     }
     .header-text{
-        margin-top: 30%;
+        margin-top: 60%;
         font-size: 16px;
     }
     .header-text h1{
@@ -395,7 +406,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul {
-        background: #ff004f;
+        background: var(--main-color);
         position: fixed;
         top: 0;
         right: -200px;
@@ -450,7 +461,7 @@ nav .fa-solid{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #ff004f;
+    background-color: var(--main-color);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -465,7 +476,7 @@ nav .fa-solid{
 }
   
 .back-to-top-button:hover {
-    background-color: #b54769;
+    background-color: var(--sub-color);
 }
   
 .show-button {
